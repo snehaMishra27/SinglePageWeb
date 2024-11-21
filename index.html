@@ -5,6 +5,7 @@
     <title>Single Page Website</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
     <style>
         .color-teal{
             color: teal;
@@ -22,7 +23,7 @@
     <nav class="navbar navbar-expand-lg navlight-light bg-light">
         <div class="container-fluid">
             <a href="#" class="navbar-brand">
-                <img src="img/1Stop_logo.png"  height="40px" alt="Logo">
+                <img src="img/img/1Stop_logo.png"  height="40px" alt="Logo">
 
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
@@ -46,28 +47,36 @@
     </nav>
     
     <!-- <br><br><br><br><br><br> -->
-    <div id="carousel" class="carousel-slide" data-bs-ride="carousel">
+    
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" ></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" ></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+
+        <!-- Inner content -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assests/f3.jpg" alt="Carousel 1" class="d-block w-100" style="max-height: 100vh;">
+                <img src="img/imgstop1.jpg" alt="Carousel 1" class="d-block w-100" style="max-height: 100vh;">
             </div>
             <div class="carousel-item">
-                <img src="assests/f2.jpg" alt="Carousel 2" class="d-block w-100" style="max-height: 100vh;">
+                <img src="img/imgstop2.jpg" alt="Carousel 2" class="d-block w-100" style="max-height: 100vh;">
             </div>
-            <div class="carousel-item">    
-                <img src="assests/flowers_name1.jpg" alt="Carousel 3" class="d-block w-100" style="max-height: 100vh;">
+            <div class="carousel-item">
+                <img src="img/imgstop7.jpg" alt="Carousel 3" class="d-block w-100" style="max-height: 100vh;">
             </div>
         </div>
+
+        <!-- Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
     </div>
     </header>
@@ -77,14 +86,19 @@
             <div class="row">
                 <div class="col-md-5">
                     <div class="container">
-                        <img src="assests/flowers_name1.jpg" alt="About-us" class="d-block w-100">
+                        <img src="img/imgstop6.jpg" alt="About-us" class="d-block w-100">
                     </div>
                 </div>
                 <div class="col-md-7">
                     <p class="text-black-50">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic perferendis rerum debitis consequuntur explicabo adipisci doloribus fuga saepe dicta quaerat labore quod at, totam minima vitae, earum ipsam repellat dolore.
+                        1Stop is a strong platform with immense potential for students from anywhere and 
+                        anytime to access cutting-edge Mentorship and Certification Program widespread with a larger 
+                        number of domains and niches to explore learning. E-learning has been the fastest growing way
+                         for an aspirant to start their journey into pursuing their Dream Career.
                     </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloribus dignissimos obcaecati rem sapiente modi officiis, iusto itaque cumque pariatur incidunt minima nulla omnis at est? Neque ipsum rem quos?</p>
+                    <p>
+                        Our Vision lies to bring in a technology-oriented career-driven Industrial Experience into the aspirant’s career with Great Value.
+                    </p>
                 </div>
             </div>
             <div class="row">
@@ -115,7 +129,7 @@
                 <div class="row">
                     <div class="col-md-4 d-flex align-items-center justify-content center">
                         <div class="card" style="width: 300px;">
-                            <img src="img/man.png" alt="mem1" class="card-img-top">
+                            <img src="img/img/man.png" alt="mem1" class="card-img-top">
                             <div class="card-body text-center">
                                 <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio 
                                 placeat vel rerum nostrum dignissimos mollitia dolor amet quos pariatur nemo 
@@ -124,9 +138,11 @@
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere deleniti unde perferendis 
                                 exercitationem, cupiditate obcaecati vel aliquam praesentium laudantium sint? Illum sequi qua
                                 deserunt illo doloremque distinctio asperiores qui. Facere!</p>
-                                <i class="bi bi-facebook icon-sm m-2"></i>
-                                <i class="bi bi-instagram icon-sm m-2"></i>
-                                <i class="bi bi-linkedin icon-sm m-2"></i>
+                                
+                                <a target="_blank" href="https://www.linkedin.com/in/sneha-mishra-b1952228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i  class="bi bi-linkedin icon-sm m-2"></i></a>       
+                                <a target="_blank" href="https://www.instagram.com/snehamishra5419/"><i  class="bi bi-instagram icon-sm m-2"></i></a>
+                                    
+                                
                             </div>
                         </div>
                     </div>
@@ -138,9 +154,9 @@
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere deleniti unde perferendis 
                                 exercitationem, cupiditate obcaecati vel aliquam praesentium laudantium sint? Illum sequi qua
                                 deserunt illo doloremque distinctio asperiores qui. Facere!</p>
-                                <i class="bi bi-facebook icon-sm m-2"></i>
-                                <i class="bi bi-instagram icon-sm m-2"></i>
-                                <i class="bi bi-linkedin icon-sm m-2"></i>
+                                <a target="_blank" href="https://www.linkedin.com/in/sneha-mishra-b1952228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i  class="bi bi-linkedin icon-sm m-2"></i></a>       
+                                <a target="_blank" href="https://www.instagram.com/snehamishra5419/"><i  class="bi bi-instagram icon-sm m-2"></i></a>
+                                    
                             </div>
                         </div>
                     </div>
@@ -152,9 +168,10 @@
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere deleniti unde perferendis 
                                 exercitationem, cupiditate obcaecati vel aliquam praesentium laudantium sint? Illum sequi qua
                                 deserunt illo doloremque distinctio asperiores qui. Facere!</p>
-                                <i class="bi bi-facebook icon-sm m-2"></i>
-                                <i class="bi bi-instagram icon-sm m-2"></i>
-                                <i class="bi bi-linkedin icon-sm m-2"></i>
+                                
+                                <a target="_blank" href="https://www.linkedin.com/in/sneha-mishra-b1952228b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i  class="bi bi-linkedin icon-sm m-2"></i></a>       
+                                <a target="_blank" href="https://www.instagram.com/snehamishra5419/"><i  class="bi bi-instagram icon-sm m-2"></i></a>
+                                    
                             </div>
                         </div>
                     </div>
@@ -216,7 +233,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="container">
-                    <img src="img/1Stop_logo.png" height="30px" class="bg-white">
+                    <img src="img/img/1Stop_logo.png" height="30px" class="bg-white">
                     <div>
                         <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab aliquid autem ea, cum dolore quisquam obcaecati sapiente eaque beatae esse, debitis amet veritatis? Illo, iure reiciendis cum sapiente at voluptas.</p>
 
