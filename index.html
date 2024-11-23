@@ -1,4 +1,4 @@
-<html lang="en">
+ <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,24 +102,29 @@
                 </div>
             </div>
             <div class="row">
-                <h6 class="display-6 text-center">What Makes Us Unique</h6>
-                <div class="col-md-4">
-                    <div class="container text-center">
-                        <span class="bi bi-person color-teal icon-lg"></span>
-                        <p>Custom Tailored user Options</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="container text-center">
-                        <span class="bi bi-shield-shaded color-teal icon-lg"></span>
-                        <p>Privacy First Approach</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="container text-center">
-                        <span class="bi bi-list color-teal icon-lg"></span>
-                        <p>Multiple Variations</p>
-                    </div>
+                <h1>What Makes Us Unique</h1>
+                <div class="features-container">
+                  <div class="feature-box" onclick="toggleExpand(this)">
+                    <div class="icon">👤</div>
+                    <h3> Tailored User Options</h3>
+                    <p class="hidden-content">
+                      We provide user-specific customization to ensure the best experience tailored to individual needs.
+                    </p>
+                  </div>
+                  <div class="feature-box" onclick="toggleExpand(this)">
+                    <div class="icon">🛡️</div>
+                    <h3>Privacy First Approach</h3>
+                    <p class="hidden-content">
+                      Your privacy is our top priority. We ensure data protection with industry-leading security measures.
+                    </p>
+                  </div>
+                  <div class="feature-box" onclick="toggleExpand(this)">
+                    <div class="icon">📋</div>
+                    <h3>Multiple Variations</h3>
+                    <p class="hidden-content">
+                      Choose from a wide variety of options to meet your unique requirements and preferences.
+                    </p>
+                  </div>
                 </div>
             </div>
         </section>
@@ -183,45 +188,59 @@
         <section id="contact" class="container">
             <h6 class="display-5 text-center">Contact Us</h6>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="container">
-                        <p class="text-muted text-center fs-3">Here's our Contact Info</p>
-                        <div class="text-black-5 text-center fs-4">Our Email</div>
-                        <div class="text-black-50 text-center fs-5">support@strong.com</div>
-                        <div class="text-black-5 text-center fs-4">Our Phone No.</div>
-                        <div class="text-black-50 text-center fs-5">+91 8848974869 </div>
-                        <div class="text-black-5 text-center fs-4">Our Address</div>
-                        <div class="text-black-50 text-center fs-5">B-12 Chirag Enclave 110080</div>
+                
+                     
+                    <div class="contact-card">
+                       
+                      <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                          <h3>  EMAIL : <a href="mailto:support@strong.com">support@strong.com</a> </h3>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div> <h3>PHONE: <a href="tel:+918848974869">+91 8848974869</a></h3>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                          <h3>  ADDRESS : B-12 Chirag Enclave, 110080</h3>
+                           
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+               
                 <div class="container">
                     <p class="text-muted text-center fs-3">You can also Write Us</p>
                     <div class="container">
                         <div class="card-shadow">
                             <div class="card-body">
-                                <div class="card" style="width: 300px;">
-                                <form>
+                                <form id="contact-form">
                                     <div class="form-group">
                                         <label for="name" class="form-label">Enter Your Name</label>
-                                        <input type="text" class="form-control" name="name"  id="name">
+                                        <input type="text" class="form-control" name="name" id="name" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="emailid" class="form-label">Enter Your Email</label>
-                                        <input type="email" class="form-control" name="email"  id="emailid">
+                                        <input type="email" class="form-control" name="email" id="emailid" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="subject" class="form-label">Enter the Subject</label>
-                                        <input type="text" class="form-control" name="subject" id="subject">
+                                        <input type="text" class="form-control" name="subject" id="subject" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="message" class="form-label">Enter Your Message</label>
-                                        <textarea name="message" class="form-control" id="message" placeholder="Type Here"></textarea>
+                                        <textarea name="message" class="form-control" id="message" placeholder="Type Here" required></textarea>
                                     </div>
                                     <div class="form-group text-center">
-                                        <input type="submit" class="btn btn-outline-dark" value="Send Message">
+                                        <button type="submit" class="btn btn-outline-dark">Send Message</button>
                                     </div>
                                 </form>
-                                </div>
+                                <p id="success-message" style="display:none;" class="text-success text-center mt-3">Your message has been sent successfully!</p>
                             </div>
                         </div>
                     </div>
@@ -262,5 +281,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="bootstrap.js"></script>   
+    <script src="index.js"></script>
+    
 </body>
 </html>
