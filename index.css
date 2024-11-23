@@ -1,3 +1,4 @@
+
 .container{
     margin-top: 60px;
     margin-bottom: 60px;
@@ -57,10 +58,10 @@
     color: #333;
   }
   
-  .h1 {
+  /* .h1 {
     font-size: 2.5em;
     margin-bottom: 30px;
-  }
+  } */
   
   .features-container {
     display: flex;
@@ -189,4 +190,20 @@
   .contact-item a:hover {
     color: #4a0072;
   }
-  
+
+  .display-6 {
+    font-weight:bold;
+    text-align: start;
+  }
+.display-5{
+    font-weight: bold;
+}
+.text-muted{
+    font-style: italic;
+    font-weight:bold;
+    
+}
+
+.unique{
+    text-align: center;
+}
